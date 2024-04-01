@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LOGIN PAGE</title>
+<link rel="stylesheet" href="/css/style4.css">
+</head>
+<body>
+	<section class="container">
+		<div class="login-container">
+			<div class="circle circle-one"></div>
+			<div class="form-container">
+				<h1 class="opacity">Trouble logging in?</h1>
+				<form action="setpass" method="post">
+
+					<label>Email ID:</label> <input type="email" name="email"
+						placeholder="Email Id" /> 
+					<label>New Password:</label> <input type="text"
+						placeholder="Enter password"  id="newpass"/> 
+					<input type="text" name="password"
+						placeholder="Re-enter the password" id="confirm" onchange="fun()"/> 
+						
+						
+						<input type="submit" value="RESET" />
+
+
+				</form>
+			</div>
+			<div class="circle circle-two"></div>
+		</div>
+		<div class="theme-btn-container"></div>
+	</section>
+	<script type="text/javascript">
+	var newpass=document.getElementById("newpass")
+    var confirm=document.getElementById("confirm")
+    if(newpass==confirm)
+    {
+        document.getElementById("button").disabled="false"
+    }
+	</script>
+</body>
+</html>
